@@ -47,10 +47,17 @@
         <div class="article-container">
           <h2 class="article-title">動画作成</h2>
           <div class="article-body">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/nMlwM9_UXMY?si=rwTA6dN1TFryhQzV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/47y4BLVE-Lk?si=sAeRZH7lor9C5xXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <video width="100%" height="100%" src="img/RoomTour.mp4" controls></video>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/nMlwM9_UXMY?si=rwTA6dN1TFryhQzV" ...></iframe>
+            </div>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/47y4BLVE-Lk?si=sAeRZH7lor9C5xXY" ...></iframe>
+            </div>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/7HTU3BBiBhc?si=5qhEIO07kzuIdTwj" ...></iframe>
+            </div>
+            
+            <video class="responsive-video" src="img/RoomTour.mp4" controls></video>
 
             <h3>使用ツール</h3>
             <p>Adobe　Premiere Pro
@@ -77,3 +84,32 @@
   <script type='text/javascript' src="js/script.js"></script>
 </body>
 </html>
+
+<style>
+/* YouTube iframe用のレスポンシブ対応 */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9比率 */
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* videoタグ用レスポンシブ対応 */
+.responsive-video {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+</style>
