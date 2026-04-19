@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+　<meta name="robots" content="noindex,nofollow,noarchive" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='WebデザイナーMAHO YAMAGUCHI ポートフォリオ'>
+  <meta property='og:url' content='URLが入る'>
+  <meta property='og:description' content='MAHO YAMAGUCHIのポートフォリオサイトです。'>
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="MAHO YAMAGUCHIのポートフォリオサイトです" />
+  <title>MAHO YAMAGUCHI ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel=”canonical” href=”http://bloom.yamaguchi-ycde.work/” />
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- header -->
+    <header class="header ">
+      <div class="container">
+        <h1 class="header-logo">
+          <a href=".">MAHO YAMAGUCHI</a>
+        </h1>
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href=".#works">WORKS</a></li>
+            <li class="gnav-item"><a href="./#skill">SKILL</a></li>
+            <li class="gnav-item"><a href="./#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="./#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <main class="content">
+
+      <article class="article">
+        <div class="article-container">
+          <h2 class="article-title">動画作成</h2>
+          <div class="article-body">
+            <div class="video-container">
+              <video class="responsive-video" controls>
+                <source src="paa/dougakoukoku.mp4" type="video/mp4">
+              </video>
+            </div>
+            <h3>担当</h3>
+            <p>構成、デザイン素材制作、動き、音楽選定</p>
+            <h3>使用ツール</h3>
+            <p>Illustrator、PremierePro、AfterEffect</p>
+            <h3>概要</h3>
+            <p>プレミアアンチエイジングで発売するスキンケアセットの認知広告</p>
+            <h3>デザインについて</h3>
+            <p>それぞれのテクスチャがリアルに伝わるように動きの秒数などを変えました。</p>
+          <div class="home-link">
+            <a href="https://myama-1.github.io/portfolio/#works">Works一覧へ</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;MAHO YAMAGUCHI</div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+</body>
+</html>
+
+<style>
+/* YouTube iframe用のレスポンシブ対応 */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9比率 */
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* videoタグ用レスポンシブ対応 */
+.responsive-video {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+</style>
