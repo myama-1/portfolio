@@ -368,6 +368,19 @@ img {
   background-color: #333;
 }
 
+.article-body h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.app-icon-img {
+  text-align: center;
+}
+
+.app-icon-img img {
+  width: 180px;
+}
+
 .article-body p {
   font-size: 15px;
   line-height: 1.8;
